@@ -1,0 +1,202 @@
+@import '../../../styles.scss';
+
+// ===================================
+// 🎨 المتغيرات الإضافية لسهولة التعديل
+// ===================================
+
+$hero-text-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+$card-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+$card-hover-transition: all 0.4s ease-in-out;
+
+// ===================================
+// 🌟 تأثير النص المتوهج (Shining Text)
+// ===================================
+
+.shining-text {
+  // استخدام لون أساسي داكن لإبراز التوهج
+  color: #fff;
+  font-weight: 700;
+  text-shadow: 
+    // توهج أبيض قريب (للون النص)
+    0 0 7px rgba(255, 255, 255, 0.9), 
+    // توهج ذهبي ناعم
+    0 0 15px rgba(255, 215, 0, 0.7), 
+    // توهج ذهبي متوسط الانتشار
+    0 0 25px rgba(255, 190, 0, 0.5),
+    // توهج برتقالي خفيف منتشر
+    0 0 40px rgba(255, 165, 0, 0.3);
+
+  // إمكانية إضافة حركة بسيطة للتأثير
+  // transition: text-shadow 0.5s ease-out;
+}
+
+// ===================================
+// 🖼️ قسم البطل (Hero Section)
+// ===================================
+
+.hero-section {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.75)), url('/assets/hero-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; // يُفضل هذا للمظهر الجذاب
+  
+  height: 95vh; // زيادة الارتفاع قليلاً
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white; 
+  position: relative; // لتحسين التمركز
+}
+
+.hero-content {
+  padding: 20px;
+  max-width: 900px;
+  // تأثير بسيط للخلفية لزيادة تباين النص
+  background: rgba(0, 0, 0, 0.1); 
+  border-radius: 10px;
+
+  h1 {
+    font-size: 5rem; // حجم أكبر
+    margin-bottom: 10px;
+    color: $secondary-color; 
+    text-shadow: $hero-text-shadow;
+    // إضافة خط سفلي ناعم
+    border-bottom: 2px solid rgba($secondary-color, 0.5);
+    padding-bottom: 10px;
+  }
+  
+  h2 {
+    font-size: 2.2rem; // حجم أكبر
+    margin-bottom: 25px;
+    font-weight: 300; // خط أرق لتباين أفضل
+  }
+
+  h3 {
+    font-size: 1.5rem;
+    font-style: italic;
+    color: rgba(255, 255, 255, 0.8);
+    margin-top: 15px;
+  }
+}
+
+// ===================================
+// 🔘 أزرار الحث على الإجراء (CTA Buttons)
+// ===================================
+
+.cta-buttons {
+  display: flex;
+  gap: 25px; // زيادة المسافة
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 40px; // مسافة أكبر للأعلى
+
+  .btn {
+    padding: 18px 35px; // مساحة أكبر للضغط
+    border-radius: 50px; // شكل دائري أكثر جاذبية
+    font-size: 1.2rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    transition: transform 0.4s ease, box-shadow 0.4s ease, background-color 0.4s ease;
+    
+    &:hover { 
+      transform: translateY(-5px); // تأثير ارتقاء أكبر
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5); // ظل أعمق
+    }
+    
+    .emoji {
+        margin-right: 8px;
+        font-size: 1.2em;
+    }
+  }
+
+  .btn-primary { 
+    background-color: $primary-color; 
+    color: white; 
+    border: none; 
+  }
+  .btn-secondary { 
+    background-color: transparent; 
+    color: white; 
+    border: 2px solid white; 
+    &:hover {
+        background-color: rgba(255, 255, 255, 0.1); // خلفية خفيفة عند التمرير
+    }
+  }
+}
+
+// ===================================
+// 🏆 قسم الميزات (Featured Section)
+// ===================================
+
+.featured-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); // زيادة الحد الأدنى
+  gap: 40px; // زيادة المسافة بين البطاقات
+  padding: 80px 0; // زيادة المساحة العلوية والسفلية
+  text-align: center;
+  background-color: #f8f8f8; // لون خلفية خفيف لتمييز القسم
+    
+  .feature-card {
+    padding: 30px; // زيادة البادينج
+    background: white;
+    border-radius: 15px; // حواف أكثر استدارة
+    box-shadow: $card-shadow;
+    transition: $card-hover-transition;
+    cursor: pointer; // للإيحاء بأنها قابلة للنقر
+    
+    &:hover {
+        transform: translateY(-10px); // تأثير ارتقاء واضح
+        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15); // ظل أكبر وأغمق
+    }
+        
+    h3 {
+      font-size: 1.5rem;
+      color: $primary-color;
+      margin-bottom: 15px;
+      // خط سفلي للتأكيد
+      border-bottom: 1px solid rgba($primary-color, 0.2); 
+      padding-bottom: 10px;
+    }
+    p {
+      color: #555;
+      line-height: 1.6; // تحسين القراءة
+      margin-bottom: 20px;
+    }
+    .link-more {
+      font-weight: bold;
+      color: $primary-color;
+      text-decoration: none;
+      border-bottom: 2px solid $primary-color; // خط تحت النص كرمز للرابط
+      padding-bottom: 2px;
+      transition: color 0.3s;
+
+      &:hover {
+        color: darken($primary-color, 10%);
+        border-bottom-color: darken($primary-color, 10%);
+      }
+    }
+  }
+}
+
+// ===================================
+// 📱 تعديلات الهواتف (Mobile Adjustments)
+// ===================================
+
+@media (max-width: 992px) {
+  .hero-content h1 { font-size: 4rem; }
+  .hero-content h2 { font-size: 1.8rem; }
+}
+
+@media (max-width: 768px) {
+  .hero-section { background-attachment: scroll; } // إلغاء التثبيت على الجوال
+  .hero-content h1 { font-size: 3rem; }
+  .hero-content h2 { font-size: 1.5rem; }
+  .cta-buttons { gap: 15px; }
+  .cta-buttons .btn { padding: 12px 25px; font-size: 1rem; }
+  .featured-section { padding: 40px 0; }
+}
+
+@media (max-width: 480px) {
+  .hero-content h1 { font-size: 2.5rem; }
+}

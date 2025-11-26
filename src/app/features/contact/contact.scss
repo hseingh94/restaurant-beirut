@@ -1,0 +1,58 @@
+/* src/app/features/contact/contact.component.scss */
+@import '../../../styles.scss';
+.contact-page {
+  padding: 40px 0;
+  text-align: center;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+  margin-top: 30px;
+  text-align: right;
+
+  @media (min-width: 992px) {
+    grid-template-columns: 1fr 1.5fr; 
+  }
+
+  h3 {
+    color: $primary-color;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    border-right: 4px solid $secondary-color;
+    padding-right: 10px;
+  }
+
+  .info-column {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+
+    .contact-details p {
+      font-size: 1.1rem;
+      margin-bottom: 15px;
+      strong { font-weight: 700; color: $text-color; }
+    }
+    
+    .hours { margin-top: 30px; }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      li {
+        font-size: 1.1rem;
+        margin-bottom: 8px;
+        color: #555;
+      }
+    }
+  }
+
+  .map-column {
+    iframe {
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+  }
+}

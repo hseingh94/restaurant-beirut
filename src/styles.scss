@@ -1,0 +1,53 @@
+/* You can add global styles to this file, and also import other style files */
+/* src/styles.scss - Global Reset, RTL, and Variables */
+
+
+/* Add this to the top of your global styles file to define the background color */
+body {
+  background-color: #ffcccc; /* A light, soft red for the overall background */
+  // Or use a more specific color:
+  // background-color: red; 
+  // background-color: #A30000; /* A dark, deep red */
+
+  // Important: Remove or comment out any previous background settings for body or html here
+}
+
+/* ... existing variables and other global styles below ... */
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap');
+
+// --- Theme Variables ---
+$primary-color: #A32029; // Deep Red/Burgundy
+$secondary-color: #f7d794; // Gold/Cream
+$text-color: #333;
+$background-color: #f8f8f8;
+$font-ar: 'Cairo', sans-serif;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: $font-ar;
+  color: $text-color;
+  background-color: $background-color;
+  direction: rtl; /* Crucial for Arabic support */
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: $primary-color;
+}
+
+main {
+  padding-top: 80px; /* Offset for fixed header */
+  min-height: calc(100vh - 150px);
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}

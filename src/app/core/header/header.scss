@@ -1,0 +1,84 @@
+/* src/app/core/header/header.component.scss */
+@import '../../../styles.scss'; // Corrected path to global styles
+
+.main-header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1000;
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5%;
+  height: 80px;
+
+  .logo a {
+    color: $primary-color;
+    h1 { font-size: 1.8rem; margin: 0; }
+    span { display: block; font-size: 0.8rem; color: lighten($text-color, 30%); }
+  }
+
+  nav ul {
+    list-style: none;
+    display: flex;
+    a {
+      display: block;
+      padding: 5px 10px;
+      color: $text-color;
+      font-weight: 700;
+      transition: color 0.3s, border-bottom 0.3s;
+      border-bottom: 3px solid transparent;
+
+      &:hover, &.active {
+        color: $primary-color;
+        border-bottom: 3px solid $primary-color;
+      }
+    }
+  }
+
+  .menu-toggle {
+    display: none; 
+    background: none;
+    border: none;
+    font-size: 1.8rem;
+    cursor: pointer;
+    color: $primary-color;
+  }
+
+  /* --- Mobile Responsiveness --- */
+  @media (max-width: 768px) {
+    nav {
+      position: absolute;
+      top: 80px;
+      right: 0;
+      width: 100%;
+      height: 0;
+      overflow: hidden;
+      background-color: rgba(255, 255, 255, 0.95);
+      transition: height 0.4s ease-in-out;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      
+      &.open { height: 250px; } 
+
+      ul {
+        flex-direction: column;
+        align-items: center;
+        li {
+            width: 100%;
+            text-align: center;
+            a { 
+                padding: 15px 0;
+                width: 90%;
+                margin: 0 auto;
+                border-bottom: 1px solid #eee;
+            }
+        }
+      }
+    }
+
+    .menu-toggle { display: block; }
+  }
+}
