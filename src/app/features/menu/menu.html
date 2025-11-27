@@ -16,7 +16,7 @@
 
   <div class="menu-grid">
     <div class="menu-card" *ngFor="let item of filteredMenu">
-      <img [src]="item.imageUrl" [alt]="item.name_ar" loading="lazy" class="card-image">
+      <img [src]="item.imageUrl" [alt]="item.name_ar" loading="eager" class="card-image">
       <div class="card-content">
         <h3>{{ item.name_ar }} <span>({{ item.name_en }})</span></h3>
         <p class="description">{{ item.description_ar }}</p>

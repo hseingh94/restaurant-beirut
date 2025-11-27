@@ -86,7 +86,7 @@ export class MenuDataService {
   id: 16, 
   name_ar: 'رز صحن', 
   name_en: 'Rice Plate', 
-  description_ar: 'أرز أبيض مطهو على البخار يقدم كطبق جانبي.', 
+  description_ar: 'أرز  مطهو على البخار يقدم كطبق جانبي.', 
   description_en: 'Steamed white rice served as a side dish.', 
   price: 1.500, 
   category: 'مقبلات', 
@@ -125,11 +125,21 @@ export class MenuDataService {
   price: 17.000, 
   category: 'دجاج', 
   imageUrl: 'assets/faroouj.jpg' },
+  { 
+  id: 22, 
+  name_ar: 'كرسبي', 
+  name_en: 'crespy', 
+  description_ar: 'وجبة كرسبي 5 قطع مقدمة مع فينكر وصوص', 
+  description_en: 'crespy 5 peices', 
+  price: 6.000, 
+  category: 'دجاج', 
+  imageUrl: 'assets/crespy.jpg' 
+},
 { 
   id: 3, 
-  name_ar: 'نص ساندويش خبز لبناني كبير',
-  name_en: 'Half Large Lebanese Bread Sandwich', 
-  description_ar: 'نصف ساندويش كبير يقدم مع إضافات مختلفة.', 
+  name_ar: 'ساندويش خبز لبناني كبير',
+  name_en: ' Large Lebanese Bread Sandwich', 
+  description_ar: ' ساندويش كبير .', 
   description_en: 'Half large sandwich with various fillings.', 
   price: 6.000, 
   category: 'ساندويش', 
@@ -156,13 +166,22 @@ export class MenuDataService {
   price: 4.00, 
   category: 'ساندويش', 
   imageUrl: 'assets/diet.webp' 
+},{ 
+  id: 23, 
+  name_ar: 'تويستر بس عالفحم ', 
+  name_en: 'twister', 
+  description_ar: 'نكهة الفحم قلبت مفهوم التويستر بالكامل .', 
+  description_en: 'Healthy sandwich made with whole wheat bread.', 
+  price: 4.00, 
+  category: 'ساندويش', 
+  imageUrl: 'assets/twister.jpg' 
 },
 
 { 
   id: 32, 
   name_ar: 'ساندويش خبز كبير مقطع', 
   name_en: 'Large Cut Sandwich', 
-  description_ar: 'ساندويش كبير مقطع مناسب للمشاركة.', 
+  description_ar: 'سندويش خبز لبناني كبير مقطع مقدم مع فينكر وصوص .', 
   description_en: 'Large sandwich cut into pieces, ideal for sharing.', 
   price: 9.00, 
   category: 'ساندويش', 
@@ -209,8 +228,36 @@ export class MenuDataService {
   description_en: 'Rice with grilled chicken pieces and special sauce.', 
   price: 6.00, 
   category: 'ريزو', 
-  imageUrl: 'assets/rizo.jpg' 
+  imageUrl: 'assets/rizofa7em.jpg' 
+},{
+  id: 51, 
+  name_ar: 'ميني ريزو ', 
+  name_en: 'Mini Rizo', 
+  description_ar: 'للناس إلي يحبون الوجبات الخفيفة ', 
+  description_en: 'Rice with grilled chicken pieces and special sauce.', 
+  price: 4.000, 
+  category: 'ريزو', 
+  imageUrl: 'assets/rizozghir.jpg' 
 },
+{ 
+  id: 8, 
+  name_ar: 'تشكن فيلة سندويش  ',
+  name_en: 'Chicken Fillet Sandwich', 
+  description_ar: 'مهذا فيليه بيروت ،كرمشة مثالية،طراوة لذيذة ،وكل شيء فيه فريش ', 
+  description_en: 'This Beirut fillet, perfect crunch, delicious tenderness, and everything in it is fresh.', 
+  price: 4.500, 
+  category: 'برجر', 
+  imageUrl: 'assets/fillet.jpg' 
+} ,{ 
+  id: 80, 
+  name_ar: ' باربكيو برجر   ',
+  name_en: 'Barbecue Burger', 
+  description_ar: 'صدر دجاج , صلصة الباربكيو, جبن  ', 
+  description_en: ' Ground chicken breast, whole wheat, bbq sauce, gouda.', 
+  price: 4.500, 
+  category: 'برجر', 
+  imageUrl: 'assets/barbecue.jpg' 
+} ,
 { 
   id: 6, 
   name_ar: 'مرطبات',
@@ -219,7 +266,7 @@ export class MenuDataService {
   description_en: 'Cold and refreshing drinks.', 
   price: 0.500, 
   category: 'مرطبات', 
-  imageUrl: 'assets/pepsi.jpg' 
+  imageUrl: 'assets/pepsi1.jpg' 
 }  
   ];
 

@@ -6,6 +6,6 @@ export interface MenuItem {
   description_ar?: string;
   description_en?: string;
   price: any;
-  category:  'عرض خاص'|'مقبلات' | 'دجاج' |'ساندويش' |'وجبات' | 'ريزو' | 'مرطبات';
+  category: 'برجر'| 'عرض خاص'|'مقبلات' | 'دجاج' |'ساندويش' |'وجبات' | 'ريزو' | 'مرطبات';
   imageUrl: string;
 }
