@@ -39,6 +39,26 @@ export class MenuDataService {
   category: 'مقبلات', 
   imageUrl: 'assets/hommos.jpg' 
 },
+{ 
+  id: 15, 
+  name_ar: 'تبولة', 
+  name_en: 'tabbouleh', 
+  description_ar: 'تبولة لبنانية طازجة', 
+  description_en: 'Fresh Lebanese Tabbouleh', 
+  price: 5.000, 
+  category: 'مقبلات', 
+  imageUrl: 'assets/tabbouleh.jpg' 
+},
+{ 
+  id: 16, 
+  name_ar: 'فتوش', 
+  name_en: 'fattoush', 
+  description_ar: ' فتوش لبناني مع خبز عربي محمّص', 
+  description_en: 'Fresh Lebanese Fattoush with Toasted Arabic Bread.', 
+  price: 5.000, 
+  category: 'مقبلات', 
+  imageUrl: 'assets/fattoush.jpg' 
+},
 
 { 
   id: 12, 
@@ -93,7 +113,15 @@ export class MenuDataService {
   imageUrl: 'assets/rez.jpg' 
 },
 
-
+{ 
+  id: 21, 
+  name_ar: 'دجاجة كاملة', 
+  name_en: 'Whole Chicken', 
+  description_ar: 'دجاجة كاملة مشوية على الفحم مع الصلصات.', 
+  description_en: 'Whole chicken grilled over charcoal with sauces.', 
+  price: 17.000, 
+  category: 'دجاج', 
+  imageUrl: 'assets/faroouj.jpg' },
 { 
   id: 2, 
   name_ar: 'نص دجاجة مشوية', 
@@ -116,24 +144,41 @@ export class MenuDataService {
   imageUrl: 'assets/sader.jpg' 
 },
 
-{ 
-  id: 21, 
-  name_ar: 'دجاجة كاملة', 
-  name_en: 'Whole Chicken', 
-  description_ar: 'دجاجة كاملة مشوية على الفحم مع الصلصات.', 
-  description_en: 'Whole chicken grilled over charcoal with sauces.', 
-  price: 17.000, 
-  category: 'دجاج', 
-  imageUrl: 'assets/faroouj.jpg' },
+
   { 
+  id: 24, 
+  name_ar: ' وجبة أجنحة ', 
+  name_en: 'Wings meal', 
+  description_ar: 'أجنحة دجاج متبلة بتوابل خاصة ومشوية على الفحم.', 
+  description_en: 'Chicken wings marinated with special spices and grilled over charcoal', 
+  price: 7.000, 
+  category: 'دجاج', 
+  imageUrl: 'assets/jwenih.jpg' 
+},
+  { 
+  id: 25, 
+  name_ar: 'وجبة أفخاد   ', 
+  name_en: ' Chicken Thighs Meal', 
+  description_ar: 'أفخاد دجاج متبلة بتوابل خاصة ومشوية على الفحم .', 
+  description_en: 'Chicken thighs marinated with special spices and grilled over charcoal.', 
+  price: 9.000, 
+  category: 'دجاج', 
+  imageUrl: 'assets/fkhad.jpg' 
+},
+{ 
   id: 22, 
   name_ar: 'كرسبي', 
-  name_en: 'crespy', 
-  description_ar: 'وجبة كرسبي 5 قطع مقدمة مع فينكر وصوص', 
-  description_en: 'crespy 5 peices', 
-  price: 6.000, 
+  name_en: 'Crispy', 
+  description_ar: 'وجبة كرسبي قطع مقدمة مع فينكر وصوص', 
+  description_en: 'Crispy pieces served with fries and sauce', 
+  price: null, // Set to null because we are using options
   category: 'دجاج', 
-  imageUrl: 'assets/crespy.jpg' 
+  imageUrl: 'assets/crespy.jpg',
+  options: [
+    { label_ar: '3 قطع', label_en: '3 Pieces', price: 5.000 },
+    { label_ar: '5 قطع', label_en: '5 Pieces', price: 6.500 },
+    { label_ar: '12 قطعة', label_en: '12 Pieces', price: 13.000 }
+  ]
 },
 { 
   id: 3, 
@@ -152,7 +197,7 @@ export class MenuDataService {
   name_en: 'Small Lebanese Bread Sandwich', 
   description_ar: 'ساندويش صغير مثالي للوجبات الخفيفة.', 
   description_en: 'Small sandwich, perfect for a light meal.', 
-  price: 4.00, 
+  price: 3.500, 
   category: 'ساندويش', 
   imageUrl: 'assets/sandwish.jpg' 
 },
@@ -163,7 +208,7 @@ export class MenuDataService {
   name_en: 'Diet Whole Wheat Bread Sandwich', 
   description_ar: 'ساندويش صحي بالخبز الأسمر.', 
   description_en: 'Healthy sandwich made with whole wheat bread.', 
-  price: 4.00, 
+  price: 4.000, 
   category: 'ساندويش', 
   imageUrl: 'assets/diet.webp' 
 },{ 
@@ -172,7 +217,7 @@ export class MenuDataService {
   name_en: 'twister', 
   description_ar: 'نكهة الفحم قلبت مفهوم التويستر بالكامل .', 
   description_en: 'Healthy sandwich made with whole wheat bread.', 
-  price: 4.00, 
+  price: 5.000, 
   category: 'ساندويش', 
   imageUrl: 'assets/twister.jpg' 
 },
@@ -211,11 +256,11 @@ export class MenuDataService {
 
 { 
   id: 5, 
-  name_ar: 'ريزو دجاج', 
-  name_en: 'Chicken Rizo', 
+  name_ar: 'ريزو دجاج كرسبي', 
+  name_en: 'Chicken crespy Rizo', 
   description_ar: 'أرز مع قطع الدجاج وصلصة مميزة.', 
   description_en: 'Rice with chicken pieces and special sauce.', 
-  price: 6.00, 
+  price: 6.000, 
   category: 'ريزو', 
   imageUrl: 'assets/rizo.jpg' 
 },
@@ -245,7 +290,7 @@ export class MenuDataService {
   name_en: 'Chicken Fillet Sandwich', 
   description_ar: 'مهذا فيليه بيروت ،كرمشة مثالية،طراوة لذيذة ،وكل شيء فيه فريش ', 
   description_en: 'This Beirut fillet, perfect crunch, delicious tenderness, and everything in it is fresh.', 
-  price: 4.500, 
+  price: 5.000, 
   category: 'برجر', 
   imageUrl: 'assets/fillet.jpg' 
 } ,{ 
@@ -254,9 +299,9 @@ export class MenuDataService {
   name_en: 'Barbecue Burger', 
   description_ar: 'صدر دجاج , صلصة الباربكيو, جبن  ', 
   description_en: ' Ground chicken breast, whole wheat, bbq sauce, gouda.', 
-  price: 4.500, 
+  price: 6.000, 
   category: 'برجر', 
-  imageUrl: 'assets/barbecue.jpg' 
+  imageUrl: 'assets/barbecue.png' 
 } ,
 { 
   id: 6, 

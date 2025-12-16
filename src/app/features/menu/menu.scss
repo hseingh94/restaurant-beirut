@@ -21,7 +21,6 @@
 }
 
 /* ---------------- CATEGORY FILTER BUTTONS ---------------- */
-
 .category-filters {
   display: flex;
   justify-content: center;
@@ -38,30 +37,24 @@
     cursor: pointer;
     font-weight: 700;
     font-size: 0.95rem;
-    letter-spacing: 0.3px;
     transition: all 0.3s ease-in-out;
 
-    &.active,
-    &:hover {
+    &.active, &:hover {
       background-color: $primary-color;
       color: white;
-      border-color: $primary-color;
       transform: translateY(-3px);
       box-shadow: 0 6px 15px rgba(0, 0, 0, 0.12);
     }
   }
 }
 
-/* ---------------- MENU GRID ---------------- */
-
+/* ---------------- MENU GRID & CARDS ---------------- */
 .menu-grid {
   display: grid;
   gap: 35px;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   padding: 0 20px;
 }
-
-/* ---------------- MENU CARD ---------------- */
 
 .menu-card {
   background: white;
@@ -78,29 +71,24 @@
     box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
   }
 
-  /* --- image section --- */
   .card-image {
     width: 100%;
     height: 210px;
     object-fit: cover;
     border-bottom: 1px solid #eee;
-    transition: transform 0.4s ease;
-
-    .menu-card:hover & {
-      transform: scale(1.05);
-    }
   }
 
-  /* --- text/content section --- */
   .card-content {
     padding: 18px 22px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
 
     h3 {
       font-size: 1.45rem;
       font-weight: 700;
       color: $primary-color;
       margin-bottom: 5px;
-
       span {
         display: block;
         font-size: 0.95rem;
@@ -116,21 +104,38 @@
       line-height: 1.5;
     }
 
+    /* السعر العادي (مثل الحمص) */
     .price {
       font-size: 1.35rem;
       font-weight: 800;
       color: #2E7D32;
       margin-top: auto;
     }
+
+    /* تنسيق الخيارات المتعددة (مثل الكرسبي) */
+    .price-wrapper {
+      margin-top: auto; 
+      
+      .option-row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 8px;
+        padding-bottom: 4px;
+        border-bottom: 1px dotted #eee; // النقاط هنا
+
+        .option-name {
+          font-weight: 700;
+          color: #555;
+          font-size: 1rem;
+        }
+
+        .option-price {
+          font-size: 1.25rem;
+          font-weight: 800;
+          color: #2E7D32; // نفس اللون الأخضر
+        }
+      }
+    }
   }
-}
-
-/* ---------------- NO ITEMS ---------------- */
-
-.no-items {
-  grid-column: 1 / -1;
-  padding: 60px;
-  font-size: 1.6rem;
-  color: #999;
-  font-weight: 600;
 }
