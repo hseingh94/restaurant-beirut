@@ -231,28 +231,7 @@ export class MenuDataService {
   price: 9.00, 
   category: 'ساندويش', 
   imageUrl: 'assets/moukata3.jpg' 
-},
-{ 
-  id: 4, 
-  name_ar: 'عرض الظهيرة من الساعة 12 إلى الساعة 6 مساءً: نص دجاجة مع التمن + فتوش صغير + ببسي',
-  name_en: 'Lunch Special from 12PM to 6PM: Half Chicken with Rice + Small Fattoush + Pepsi',
-  description_ar: 'عرض الظهيرة يشمل نص دجاجة، التمن، فتوش صغير، وببسي.', 
-  description_en: 'Lunch special includes half chicken, rice, small fattoush, and Pepsi.',
-  price: 10.00, 
-  category: 'عرض خاص', 
-  imageUrl: 'assets/ared.jpg' 
-},
-
-{ 
-  id: 40, 
-  name_ar: 'عرض الظهيرة من الساعة 12 إلى الساعة 6 مساءً: 2 ساندويش صغير + فينكر + ببسي',
-  name_en: 'Lunch Special from 12PM to 6PM: 2 Small Sandwiches + Finker + Pepsi',
-  description_ar: 'عرض الظهيرة يشمل 2 ساندويش صغير، فنكر، وببسي.', 
-  description_en: 'Lunch special includes 2 small sandwiches, Finker, and Pepsi.',
-  price: 7.75, 
-  category: 'عرض خاص', 
-  imageUrl: 'assets/ared1.jpg' 
-},
+}, 
 
 { 
   id: 5, 
@@ -276,7 +255,7 @@ export class MenuDataService {
   imageUrl: 'assets/rizofa7em.jpg' 
 },{
   id: 51, 
-  name_ar: 'ميني ريزو ', 
+  name_ar: '  ميني ريزو دجاج على الفحم', 
   name_en: 'Mini Rizo', 
   description_ar: 'للناس إلي يحبون الوجبات الخفيفة ', 
   description_en: 'Rice with grilled chicken pieces and special sauce.', 
@@ -284,6 +263,17 @@ export class MenuDataService {
   category: 'ريزو', 
   imageUrl: 'assets/rizozghir.jpg' 
 },
+{
+  id: 51, 
+  name_ar: 'ميني ريزو كرسبي', 
+  name_en: 'Mini Rizo', 
+  description_ar: 'للناس إلي يحبون الوجبات الخفيفة ', 
+  description_en: 'Rice with grilled chicken pieces and special sauce.', 
+  price: 4.000, 
+  category: 'ريزو', 
+  imageUrl: 'assets/rizo.jpg' 
+},
+
 { 
   id: 8, 
   name_ar: 'تشكن فيلة سندويش  ',

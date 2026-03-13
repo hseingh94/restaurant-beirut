@@ -24,20 +24,18 @@
             "browser": "src/main.ts",
             "tsConfig": "tsconfig.app.json",
             "inlineStyleLanguage": "scss",
-          "assets": [
-  "src/favicon.ico",
-  {
-    "glob": "**/*",
-    "input": "src/assets", 
-    "output": "/assets/"   
-  }
-],
+            "assets": [
+              "src/favicon.ico",
+              "src/assets"
+            ],
             "styles": [
               "src/styles.scss"
-            ]
+            ],
+            "scripts": []
           },
           "configurations": {
             "production": {
+              "baseHref": "/mat3am.beirut/",
               "budgets": [
                 {
                   "type": "initial",
@@ -78,5 +76,4 @@
       }
     }
   }
-  
 }

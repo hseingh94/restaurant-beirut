@@ -11,7 +11,7 @@ export interface MenuItem {
   description_ar?: string;
   description_en?: string;
   price: any; 
-  category: 'برجر'| 'عرض خاص'|'مقبلات' | 'دجاج' |'ساندويش' |'وجبات' | 'ريزو' | 'مرطبات';
+  category: 'برجر'|'مقبلات' | 'دجاج' |'ساندويش' |'وجبات' | 'ريزو' | 'مرطبات';
   imageUrl: string;
   options?: MenuOption[]; // Add this optional line
 }
