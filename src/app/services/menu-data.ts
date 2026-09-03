@@ -119,7 +119,7 @@ export class MenuDataService {
   name_en: 'Whole Chicken', 
   description_ar: 'دجاجة كاملة مشوية على الفحم مع الصلصات.', 
   description_en: 'Whole chicken grilled over charcoal with sauces.', 
-  price: 17.000, 
+  price: 18.000, 
   category: 'دجاج', 
   imageUrl: 'assets/faroouj.jpg' },
 { 
@@ -128,7 +128,7 @@ export class MenuDataService {
   name_en: 'Half Grilled Chicken', 
   description_ar: 'نصف دجاجة مشوية تقدم مع الصلصات الجانبية.', 
   description_en: 'Half grilled chicken served with side sauces.', 
-  price: 9.000, 
+  price: 10.000, 
   category: 'دجاج', 
   imageUrl: 'assets/nos farouj.jpg' 
 },
@@ -161,7 +161,7 @@ export class MenuDataService {
   name_en: ' Chicken Thighs Meal', 
   description_ar: 'أفخاد دجاج متبلة بتوابل خاصة ومشوية على الفحم .', 
   description_en: 'Chicken thighs marinated with special spices and grilled over charcoal.', 
-  price: 9.000, 
+  price: 9.500, 
   category: 'دجاج', 
   imageUrl: 'assets/fkhad.jpg' 
 },
@@ -186,7 +186,7 @@ export class MenuDataService {
   name_en: ' Large Lebanese Bread Sandwich', 
   description_ar: ' ساندويش كبير .', 
   description_en: 'Half large sandwich with various fillings.', 
-  price: 6.000, 
+  price: 6.500, 
   category: 'ساندويش', 
   imageUrl: 'assets/sandwishaghir.jpg' 
 },
@@ -197,7 +197,7 @@ export class MenuDataService {
   name_en: 'Small Lebanese Bread Sandwich', 
   description_ar: 'ساندويش صغير مثالي للوجبات الخفيفة.', 
   description_en: 'Small sandwich, perfect for a light meal.', 
-  price: 3.500, 
+  price: 4.000, 
   category: 'ساندويش', 
   imageUrl: 'assets/sandwish.jpg' 
 },
@@ -239,7 +239,7 @@ export class MenuDataService {
   name_en: 'Chicken crespy Rizo', 
   description_ar: 'أرز مع قطع الدجاج وصلصة مميزة.', 
   description_en: 'Rice with chicken pieces and special sauce.', 
-  price: 6.000, 
+  price: 6.500, 
   category: 'ريزو', 
   imageUrl: 'assets/rizo.jpg' 
 },
@@ -250,7 +250,7 @@ export class MenuDataService {
   name_en: 'Grilled Chicken Rizo', 
   description_ar: 'أرز مع قطع الدجاج المشوي على الفحم وصلصة مميزة.', 
   description_en: 'Rice with grilled chicken pieces and special sauce.', 
-  price: 6.00, 
+  price: 6.500, 
   category: 'ريزو', 
   imageUrl: 'assets/rizofa7em.jpg' 
 },{

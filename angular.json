@@ -35,8 +35,7 @@
           },
           "configurations": {
             "production": {
-              "baseHref": "/mat3am.beirut/",
-              "budgets": [
+"baseHref": "/restaurant-beirut/",              "budgets": [
                 {
                   "type": "initial",
                   "maximumWarning": "500kB",
